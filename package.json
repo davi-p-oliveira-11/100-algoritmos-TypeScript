@@ -13,5 +13,9 @@
     "prompt-sync": "^4.2.0",
     "readline-sync": "^1.4.10",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
+    "@types/readline-sync": "^1.4.8"
   }
 }
