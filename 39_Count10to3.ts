@@ -7,7 +7,7 @@ import { pressEnterToExit } from "./utils/inputUtils";
 
 function main(): void {
   function count(): void {
-    let counter = 10;
+    let counter: number = 10;
 
     while (counter >= 3) {
       console.log(counter);
