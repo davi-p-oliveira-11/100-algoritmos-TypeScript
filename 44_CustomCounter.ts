@@ -4,7 +4,7 @@ Example:
 Enter the first value: 3
 Enter the last value: 10
 Enter the increment: 2
-Counting: 3 5 7 9 Done!
+Counting: 3 5 7 9 It's over!
 */
 
 import { prompt, pressEnterToExit } from "./utils/inputUtils";
