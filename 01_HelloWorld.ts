@@ -7,9 +7,8 @@ import { pressEnterToExit } from "./utils/inputUtils";
 // function that shows the message
 
 function showMessage(message: string): string {
-  console.log(message);
   return `${message}`;
 }
 
-showMessage("Hello World !");
+console.log(showMessage("Hello World !"));
 pressEnterToExit();
