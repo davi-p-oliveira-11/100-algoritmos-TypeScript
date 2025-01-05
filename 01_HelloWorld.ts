@@ -2,11 +2,14 @@
 1) Write a program that displays the message "Hello, World!" on the screen.
 */
 
-function main(): void {
-  function helloWorld(): void {
-    console.log("Hello World !");
-  }
-  helloWorld();
+import { pressEnterToExit } from "./utils/inputUtils";
+
+// function that shows the message
+
+function showMessage(message: string): string {
+  console.log(message);
+  return `${message}`;
 }
 
-main();
+showMessage("Hello World !");
+pressEnterToExit();

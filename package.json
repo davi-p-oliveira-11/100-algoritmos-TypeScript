@@ -12,11 +12,12 @@
   "dependencies": {
     "date-fns": "^3.6.0",
     "prompt-sync": "^4.2.0",
-    "readline-sync": "^1.4.10",
-    "typescript": "^5.5.4"
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "@types/prompt-sync": "^4.2.3",
-    "@types/readline-sync": "^1.4.8"
+    "@types/readline-sync": "^1.4.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   }
 }
