@@ -1,5 +1,5 @@
 /* 
- Create a program that reads the name and salary of an employee, and displays a message at the end.
+3) Create a program that reads the name and salary of an employee, and displays a message at the end.
 
 Example:
 Employee Name: Jane Doe
