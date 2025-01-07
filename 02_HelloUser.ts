@@ -5,10 +5,10 @@ What is your name? João da Silva
 Hello João da Silva, it's a pleasure to meet you!
 */
 
+// function that says hello
+
 function sayHello(name: string): string {
-  console.log(`Hello ${name} nice to meet you !`);
-  return `${name}`;
+  return `Hello ${name} nice to meet you !`;
 }
 
-const result: string = sayHello("John");
-console.log(result);
+console.log(sayHello("John"));
