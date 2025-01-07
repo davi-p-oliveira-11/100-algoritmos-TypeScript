@@ -8,25 +8,15 @@ Grade 2: 8.5
 The average between 4.5 and 8.5 is 6.5
 */
 
-import { prompt, pressEnterToExit } from "./utils/inputUtils";
-
-function main(): void {
-  function calculateAverage(): void {
-    const grade1: number = parseFloat(
-      prompt("Enter the grade of the first test: ")
-    );
-    const grade2: number = parseFloat(
-      prompt("Enter the grade of sencond test: ")
-    );
-
-    const average: number = (grade1 + grade2) / 2;
-
-    console.log(
-      `The average between ${grade1} and ${grade2} is ${average.toFixed(2)}`
-    );
-  }
-  calculateAverage();
+function calculateAverage(
+  grade1: number,
+  grade2: number,
+  average?: number
+): number | string {
+  average = (grade1 + grade2) / 2;
+  return `The average between ${grade1} and ${grade2} is ${average.toFixed(2)}`;
 }
 
-main();
-pressEnterToExit();
+console.log(calculateAverage(9, 7));
+console.log(calculateAverage(4, 7));
+console.log(calculateAverage(3, 8));
