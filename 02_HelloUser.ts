@@ -5,16 +5,10 @@ What is your name? João da Silva
 Hello João da Silva, it's a pleasure to meet you!
 */
 
-import { prompt, pressEnterToExit } from "./utils/inputUtils";
-
-function main(): void {
-  function helloUser(): void {
-    let name: string | null = prompt("What is your name ? ");
-    console.log(`Hello ${name} nice to meet you !`);
-  }
-
-  helloUser();
+function sayHello(name: string): string {
+  console.log(`Hello ${name} nice to meet you !`);
+  return `${name}`;
 }
 
-main();
-pressEnterToExit();
+const result: string = sayHello("John");
+console.log(result);

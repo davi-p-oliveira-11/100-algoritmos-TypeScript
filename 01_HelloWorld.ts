@@ -8,5 +8,4 @@ function showMessage(message: string): string {
   return `${message}`;
 }
 
-const result = showMessage("Hello World !");
-console.log(result);
+console.log(showMessage("Hello World !"));
