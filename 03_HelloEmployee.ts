@@ -7,20 +7,10 @@ Salary: 1850.45
 The employee Jane Doe has a salary of R$1850.45 in June.
 */
 
-import { prompt, pressEnterToExit } from "./utils/inputUtils";
-
-function main(): void {
-  function helloEmployee(): void {
-    const name: string = prompt("What is the employee name ?");
-    const salary: string = prompt("Enter your salary: ");
-    const month: string = prompt("What was the last month that you worked ? ");
-
-    console.log(
-      `The employee ${name} has a salary of ${salary} USD in ${month}`
-    );
-  }
-  helloEmployee();
+function helloEmployee(name: string, salary: string, month: string): string {
+  return `The employee ${name} has a salary of ${salary} USD in ${month}`;
 }
 
-main();
-pressEnterToExit();
+console.log(helloEmployee("John", "2000", "October"));
+console.log(helloEmployee("Mary", "2500", "March"));
+console.log(helloEmployee("Tom", "4500", "February"));

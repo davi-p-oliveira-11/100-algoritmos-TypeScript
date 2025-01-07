@@ -19,5 +19,11 @@ function main(): void {
   sumOfTwo();
 }
 
-main();
-pressEnterToExit();
+function sum(num1: number, num2: number, result?: number): number | string {
+  result = num1 + num2;
+  return `The sum between ${num1} and ${num2} is ${result}`;
+}
+
+console.log(sum(2, 2));
+console.log(sum(5, 2));
+console.log(sum(3, 10));
