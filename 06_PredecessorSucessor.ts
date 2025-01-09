@@ -7,6 +7,7 @@ The successor of 9 is 10
 */
 import { prompt, pressEnterToExit } from "./utils/inputUtils";
 
+/*
 function main(): void {
   function predecessorSucessor(): void {
     const num1: number = parseInt(prompt("Type a number: "));
@@ -21,3 +22,13 @@ function main(): void {
 
 main();
 pressEnterToExit();
+*/
+
+function predecessorSucessor(num1: number): number | string {
+  const predecessor: number = num1 - 1;
+  const sucessor: number = num1 + 1;
+  return `The succesor of ${num1} is ${predecessor} \n
+The predecessor of ${num1} is ${sucessor}`;
+}
+
+predecessorSucessor(2);
