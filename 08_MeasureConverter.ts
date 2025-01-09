@@ -14,7 +14,7 @@ The distance of 185.72m corresponds to:
 import { prompt, pressEnterToExit } from "./utils/inputUtils";
 
 function main(): void {
-  function measureConverter(): void {
+  function measureConverter1(): void {
     const meters: number = parseFloat(prompt("Type a distance in meters: "));
     const kilometers: number = meters / 1000;
     const hectometers: number = meters / 100;
@@ -31,8 +31,27 @@ function main(): void {
     ${centimeters.toFixed(2)}cm
     ${milimeters.toFixed(3)}mm`);
   }
-  measureConverter();
+  measureConverter1();
 }
 
 main();
 pressEnterToExit();
+
+function measureConverter(meters: number): number | string {
+  const kilometers: number = meters / 1000;
+  const hectometers: number = meters / 100;
+  const decameters: number = meters / 10;
+  const decimeters: number = meters * 10;
+  const centimeters: number = meters * 100;
+  const milimeters: number = meters * 1000;
+
+  return `The distance of ${meters}m corresponds to:
+    ${kilometers}km
+    ${hectometers}hm
+    ${decameters}dam
+    ${decimeters.toFixed(1)}dm
+    ${centimeters.toFixed(2)}cm
+    ${milimeters.toFixed(3)}mm`;
+}
+
+console.log(measureConverter(1));
