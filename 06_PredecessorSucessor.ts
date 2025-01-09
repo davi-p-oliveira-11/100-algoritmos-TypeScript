@@ -5,24 +5,6 @@ Enter a number: 9
 The predecessor of 9 is 8
 The successor of 9 is 10
 */
-import { prompt, pressEnterToExit } from "./utils/inputUtils";
-
-/*
-function main(): void {
-  function predecessorSucessor(): void {
-    const num1: number = parseInt(prompt("Type a number: "));
-    const predecessor: number = num1 - 1;
-    const succesor: number = num1 + 1;
-
-    console.log(`The predecessor of ${num1} is ${predecessor}`);
-    console.log(`The succesor of ${num1} is ${succesor}`);
-  }
-  predecessorSucessor();
-}
-
-main();
-pressEnterToExit();
-*/
 
 function predecessorSucessor(num1: number): number | string {
   const predecessor: number = num1 - 1;
@@ -31,4 +13,6 @@ function predecessorSucessor(num1: number): number | string {
 The predecessor of ${num1} is ${sucessor}`;
 }
 
-predecessorSucessor(2);
+console.log(predecessorSucessor(2));
+console.log(predecessorSucessor(9));
+console.log(predecessorSucessor(6));
