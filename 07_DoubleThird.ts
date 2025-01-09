@@ -23,3 +23,11 @@ function main(): void {
 
 main();
 pressEnterToExit();
+
+function calculateNums(num1: number): number | string {
+  const double: number = num1 * 2;
+  const third: number = num1 / 3;
+
+  return `The double of ${num1} is ${double.toFixed(2)}
+The double of ${num1} is ${third.toFixed(2)}`;
+}
