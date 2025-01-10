@@ -7,7 +7,7 @@
 import { prompt, pressEnterToExit } from "./utils/inputUtils";
 
 function main(): void {
-  function calculateArea(): void {
+  function calculateArea2(): void {
     const height: number = parseFloat(
       prompt("Type the height of the wall in meters: ")
     );
@@ -25,8 +25,18 @@ function main(): void {
       `and the amount of paint needed is equivalent to ${paintNeeded} liters.`
     );
   }
-  calculateArea();
+  calculateArea2();
 }
 
 main();
 pressEnterToExit();
+
+function calculateArea(width: number, height: number, area: number): number {
+  area = width * height;
+  return area;
+}
+
+function calculatePaintNeeded(area: number, paintNeeded: number): number {
+  paintNeeded = area * 0.5;
+  return paintNeeded;
+}
