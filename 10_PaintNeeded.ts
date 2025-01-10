@@ -4,39 +4,21 @@
  knowing that each liter of paint covers an area of 2 square meters.
 */
 
-import { prompt, pressEnterToExit } from "./utils/inputUtils";
-
-function main(): void {
-  function calculateArea2(): void {
-    const height: number = parseFloat(
-      prompt("Type the height of the wall in meters: ")
-    );
-    const width: number = parseFloat(
-      prompt("Type the width of the wall in meters: ")
-    );
-
-    const area: number = width * height;
-    const paintNeeded: number = area * 0.5;
-
-    console.log(
-      `The area of the wall to be painted is equivalent to ${area} m²`
-    );
-    console.log(
-      `and the amount of paint needed is equivalent to ${paintNeeded} liters.`
-    );
+function algorithm10(width: number, height: number): string {
+  function calculateArea(width: number, height: number): number {
+    return width * height;
   }
-  calculateArea2();
+
+  function calculatePaintNeeded(area: number): number {
+    return area * 0.5;
+  }
+
+  const area = calculateArea(width, height);
+  const paintNeeded = calculatePaintNeeded(area);
+
+  return `The area of the wall is ${area} square meters, and the amount of paint needed is ${paintNeeded} liters`;
 }
 
-main();
-pressEnterToExit();
-
-function calculateArea(width: number, height: number, area: number): number {
-  area = width * height;
-  return area;
-}
-
-function calculatePaintNeeded(area: number, paintNeeded: number): number {
-  paintNeeded = area * 0.5;
-  return paintNeeded;
-}
+console.log(algorithm10(10, 3));
+console.log(algorithm10(5, 4));
+console.log(algorithm10(12, 5));
