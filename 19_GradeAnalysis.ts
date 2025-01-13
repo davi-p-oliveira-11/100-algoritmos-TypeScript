@@ -5,32 +5,6 @@ In the end, analyze the average and show whether
 the student had good performance (if it was above the average of 7.0).
 */
 
-/*
-import { prompt, pressEnterToExit } from "./utils/inputUtils";
-
-function main(): void {
-  function analyzeGrade(): void {
-    const grade1: number = parseFloat(prompt("Enter the grade for exam 2: "));
-    const grade2: number = parseFloat(prompt("Enter the grade for exam 2: "));
-    const average: number = (grade1 + grade2) / 2;
-
-    console.log(
-      `The average of the exams is equivalent to ${average.toFixed(1)}`
-    );
-
-    average >= 7
-      ? console.log("Student Passed !")
-      : console.log("Student Failed !");
-  }
-
-  analyzeGrade();
-}
-
-main();
-pressEnterToExit();
-
-*/
-
 function gradeAnalysis(name: string, grade1: number, grade2: number): string {
   function calculateAverage(grade1: number, grade2: number): number {
     return (grade1 + grade2) / 2;
