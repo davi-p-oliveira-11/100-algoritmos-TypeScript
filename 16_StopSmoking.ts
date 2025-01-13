@@ -32,3 +32,31 @@ function main(): void {
 
 main();
 pressEnterToExit();
+
+function algorithm16(cigarettesPerDay: number, yearsSmoking: number): string {
+  function calculateTotal(
+    cigarettesPerDay: number,
+    yearsSmoking: number
+  ): number {
+    return cigarettesPerDay * 365 * yearsSmoking;
+  }
+
+  function minutesLost(totalCigarsSmoked: number): number {
+    return totalCigarsSmoked * 10;
+  }
+
+  function daysLost(minutesLoss: number) {
+    return minutesLoss / 1440;
+  }
+
+  const totalCigarsSmoked: number = calculateTotal(
+    cigarettesPerDay,
+    yearsSmoking
+  );
+
+  const minutes: number = minutesLost(totalCigarsSmoked);
+
+  const days: number = daysLost(minutesLost);
+
+  return ``;
+}
