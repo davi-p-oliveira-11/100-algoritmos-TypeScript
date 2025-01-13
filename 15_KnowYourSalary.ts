@@ -22,3 +22,16 @@ function main(): void {
 
 main();
 pressEnterToExit();
+
+function algorithm14(daysWorked: number): string {
+  function calculate(daysWorked: number): number {
+    return daysWorked * 200;
+  }
+
+  const salary: number = calculate(daysWorked);
+
+  return `The employee worked ${daysWorked} days
+and will receive ${salary} USD`;
+}
+
+console.log(algorithm14(20));
