@@ -8,7 +8,7 @@ function algorithm13(salary: number): string {
     return salary + salary * 0.15;
   }
 
-  const newSalary = calculateSalary(salary);
+  const newSalary: number = calculateSalary(salary);
 
   return `Your new salary with a raise of 15% is: ${newSalary}`;
 }
