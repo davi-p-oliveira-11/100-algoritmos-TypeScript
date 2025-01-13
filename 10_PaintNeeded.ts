@@ -13,8 +13,8 @@ function algorithm10(width: number, height: number): string {
     return area * 0.5;
   }
 
-  const area = calculateArea(width, height);
-  const paintNeeded = calculatePaintNeeded(area);
+  const area: number = calculateArea(width, height);
+  const paintNeeded: number = calculatePaintNeeded(area);
 
   return `The area of the wall is ${area} square meters, and the amount of paint needed is ${paintNeeded} liters`;
 }
