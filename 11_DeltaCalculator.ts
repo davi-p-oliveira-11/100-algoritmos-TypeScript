@@ -16,7 +16,7 @@ function algorithm11(
     return valueOfB * valueOfB - 4 * (valueOfA * valueOfC);
   }
 
-  const delta = calculateDelta(valueOfA, valueOfB, valueOfC);
+  const delta: number = calculateDelta(valueOfA, valueOfB, valueOfC);
 
   return `The value of delta is equal to: ${delta}`;
 }
