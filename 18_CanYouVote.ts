@@ -22,3 +22,17 @@ function main(): void {
 
 main();
 pressEnterToExit();
+
+function algorithm18(userAge: number) {
+  if (userAge >= 16) {
+    return `You are already eligible to vote.`;
+  } else {
+    return `You are not old enough to vote yet.`;
+  }
+}
+
+console.log(algorithm18(12));
+console.log(algorithm18(30));
+console.log(algorithm18(50));
+console.log(algorithm18(40));
+console.log(algorithm18(8));
