@@ -3,7 +3,7 @@
 calculates their age, and then shows whether they are eligible to vote or not.
 */
 
-function algorithm18(userAge: number) {
+function algorithm18(userAge: number): string {
   if (userAge >= 16) {
     return `You are already eligible to vote.`;
   } else {
