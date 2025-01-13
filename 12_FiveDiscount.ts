@@ -8,7 +8,7 @@ function algorithm12(productPrice: number): string {
     return productPrice - productPrice * 0.05;
   }
 
-  const finalPrice = calculateDiscount(productPrice);
+  const finalPrice: number = calculateDiscount(productPrice);
 
   return `The price with discount is : ${finalPrice.toFixed(2)}`;
 }
