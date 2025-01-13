@@ -3,26 +3,6 @@
  knowing that they work 8 hours per day and earn $25 per hour worked.
 */
 
-import { prompt, pressEnterToExit } from "./utils/inputUtils";
-
-function main(): void {
-  function calculate(): void {
-    const daysWorked: number = parseInt(
-      prompt("How many days did you work  last month ? ")
-    );
-    const salary: number = daysWorked * 200;
-
-    console.log(`
-        The employee worked ${daysWorked} days
-        and will receive ${salary} USD
-      `);
-  }
-  calculate();
-}
-
-main();
-pressEnterToExit();
-
 function algorithm14(daysWorked: number): string {
   function calculate(daysWorked: number): number {
     return daysWorked * 200;
@@ -35,3 +15,7 @@ and will receive ${salary} USD`;
 }
 
 console.log(algorithm14(20));
+console.log(algorithm14(12));
+console.log(algorithm14(30));
+console.log(algorithm14(25));
+console.log(algorithm14(10));
