@@ -2,16 +2,16 @@
 20) Develop a program that reads an integer and shows whether it is EVEN or ODD."
 */
 
-import { prompt, pressEnterToExit } from "./utils/inputUtils";
-
-function main(): void {
-  function evenOrOdd(): void {
-    const num: number = parseInt(prompt("Type a number: "));
-
-    num % 2 === 0 ? console.log("Even number") : console.log("Odd number");
+function algorithm20(num: number): number | string {
+  if (num % 2 === 0) {
+    return `Even Number`;
+  } else {
+    return `Odd Number`;
   }
-  evenOrOdd();
 }
 
-main();
-pressEnterToExit();
+console.log(algorithm20(2));
+console.log(algorithm20(1));
+console.log(algorithm20(4));
+console.log(algorithm20(12));
+console.log(algorithm20(7));
